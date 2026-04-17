@@ -169,4 +169,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d6f6eccb658871468942b014450d682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Snowball
-  speed: 4
+  speed: 6.5

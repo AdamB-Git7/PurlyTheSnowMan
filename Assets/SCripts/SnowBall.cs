@@ -1,41 +1,53 @@
 using UnityEngine;
 
+/// <summary>
+/// Moves in a straight line in the direction set by SnowGun.
+/// Minimum speed is 6.5f. Destroys itself after 10 seconds (lifetime) or
+/// on hitting the player. A short grace period prevents immediate self-destruction
+/// against the spawning wall.
+/// </summary>
 public class Snowball : MonoBehaviour
 {
-    public float speed = 4f;
-    private Transform target;
+    public float speed = 6.5f;
+
+    private const float MinSpeed = 6.5f;
+    private const float LifeTime = 10f;
+
+    // Seconds after spawn during which wall collisions are ignored
+    private const float CollisionGracePeriod = 0.5f;
+
+    private Vector2 direction = Vector2.left;
+    private float age = 0f;
 
     void Start()
     {
-        // Find Purly using the Player tag
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        speed = Mathf.Max(speed, MinSpeed);
+        Destroy(gameObject, LifeTime);
+    }
 
-        if (player != null)
-        {
-            target = player.transform;
-        }
-
-        // Destroy snowball after 10 seconds
-        Destroy(gameObject, 10f);
+    /// <summary>Sets the travel direction. Called by SnowGun immediately after instantiation.</summary>
+    public void SetDirection(Vector2 dir)
+    {
+        direction = dir.normalized;
     }
 
     void Update()
     {
-        // Follow Purly
-        if (target != null)
-        {
-            Vector2 direction = (target.position - transform.position).normalized;
-            transform.position += (Vector3)(direction * speed * Time.deltaTime);
-        }
+        age += Time.deltaTime;
+        transform.Translate(direction * speed * Time.deltaTime, Space.World);
     }
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        // If it hits Purly → destroy both
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(collision.gameObject); // destroy Purly
-            Destroy(gameObject); // destroy snowball
+            GameManager.Instance?.OnPurlyDied();
+            Destroy(gameObject);
+        }
+        else if (age >= CollisionGracePeriod)
+        {
+            // Hit a wall after clearing the spawn side — despawn
+            Destroy(gameObject);
         }
     }
 }

@@ -49,9 +49,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\SCripts\SnowBall.cs" />
+    <Compile Include="Assets\SCripts\PurlyDeath.cs" />
+    <Compile Include="Assets\SCripts\GameManager.cs" />
+    <Compile Include="Assets\SCripts\HighScoresController.cs" />
     <Compile Include="Assets\SCripts\SnowGun.cs" />
     <Compile Include="Assets\SCripts\BalloonPop.cs" />
+    <Compile Include="Assets\SCripts\BalloonManager.cs" />
+    <Compile Include="Assets\SCripts\MainMenuController.cs" />
     <Compile Include="Assets\SCripts\PlayerMovement.cs" />
+    <Compile Include="Assets\SCripts\SnowGunManager.cs" />
+    <Compile Include="Assets\SCripts\HUDController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -606,12 +613,12 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@191c0d7e3b69\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe">
-      <HintPath>Library\PackageCache\com.unity.collections@aea9d3bd5e19\Unity.Collections.Tests\System.Runtime.CompilerServices.Unsafe\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="Mono.Cecil">
+      <HintPath>Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff\Mono.Cecil.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">
@@ -1380,6 +1387,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Bezi.Editor.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
