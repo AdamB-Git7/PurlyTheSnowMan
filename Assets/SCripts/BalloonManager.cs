@@ -9,41 +9,60 @@ using UnityEngine;
 /// </summary>
 public class BalloonManager : MonoBehaviour
 {
+    // Global reference so popped balloons can ask the manager to respawn a replacement.
     public static BalloonManager Instance { get; private set; }
 
     [Header("Balloon Prefab")]
+    // Prefab spawned on each arena wall.
     public GameObject balloonPrefab;
 
     [Header("Arena Bounds (world space)")]
-    public float arenaLeft   = -12f;
-    public float arenaRight  =  12f;
-    public float arenaTop    =   6f;
-    public float arenaBottom =  -6f;
+    // The playable arena edges used to place balloons along the walls.
+    public float arenaLeft = -12f;
+    public float arenaRight = 12f;
+    public float arenaTop = 6f;
+    public float arenaBottom = -6f;
 
     [Tooltip("How far inset from the wall edge the balloon spawns")]
+    // Spawn slightly inside the wall so the balloon is visible and reachable.
     public float wallOffset = 0.5f;
 
+    // The latest a respawn is allowed to happen after a balloon is popped.
     private const float MaxRespawnDelay = 2f;
 
     void Awake()
     {
-        if (Instance != null && Instance != this) { Destroy(gameObject); return; }
+        // Keep exactly one active manager instance in the scene.
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
         Instance = this;
     }
 
     void Start()
     {
-        // Clear any manually placed balloons in the scene
+        // Remove any balloons that may have been left in the scene manually,
+        // so the manager controls all balloon spawning consistently.
         try
         {
-            foreach (var b in GameObject.FindGameObjectsWithTag("Balloon"))
-                Destroy(b);
+            foreach (GameObject balloon in GameObject.FindGameObjectsWithTag("Balloon"))
+            {
+                Destroy(balloon);
+            }
         }
-        catch (UnityEngine.UnityException) { }
+        catch (UnityException)
+        {
+            // Ignore the exception if the Balloon tag does not exist yet.
+        }
 
-        // Spawn exactly one balloon per wall (4 total) at game start
-        for (int wall = 0; wall < 4; wall++)
-            SpawnBalloon(wall);
+        // Spawn exactly one balloon on each wall when the game begins.
+        for (int wallIndex = 0; wallIndex < 4; wallIndex++)
+        {
+            SpawnBalloon(wallIndex);
+        }
     }
 
     /// <summary>
@@ -52,26 +71,48 @@ public class BalloonManager : MonoBehaviour
     /// </summary>
     public void ScheduleRespawn(int wallIndex)
     {
-        if (wallIndex < 0) return;
+        // Ignore invalid wall indices instead of spawning in a bad location.
+        if (wallIndex < 0)
+        {
+            return;
+        }
+
+        // Delay the respawn to keep balloon pops readable during gameplay.
         StartCoroutine(RespawnAfterDelay(wallIndex));
     }
 
     private IEnumerator RespawnAfterDelay(int wallIndex)
     {
+        // Wait a small random amount of time before replacing the popped balloon.
         yield return new WaitForSeconds(Random.Range(0.5f, MaxRespawnDelay));
+
+        // Create the replacement balloon on the same wall.
         SpawnBalloon(wallIndex);
     }
 
     private void SpawnBalloon(int wallIndex)
     {
-        if (balloonPrefab == null) return;
+        // Do nothing if no prefab has been assigned in the Inspector.
+        if (balloonPrefab == null)
+        {
+            return;
+        }
 
-        Vector3 pos = GetRandomWallPosition(wallIndex);
-        GameObject balloon = Instantiate(balloonPrefab, pos, Quaternion.identity);
+        // Pick a valid spawn point along the requested wall.
+        Vector3 position = GetRandomWallPosition(wallIndex);
+
+        // Create the balloon at that position with no rotation.
+        GameObject balloon = Instantiate(balloonPrefab, position, Quaternion.identity);
+
+        // Ensure spawned balloons can be found and cleaned up by tag.
         balloon.tag = "Balloon";
 
+        // Store the wall index on the balloon so it can respawn on the same wall later.
         BalloonPop pop = balloon.GetComponent<BalloonPop>();
-        if (pop != null) pop.wallIndex = wallIndex;
+        if (pop != null)
+        {
+            pop.wallIndex = wallIndex;
+        }
     }
 
     /// <summary>
@@ -82,14 +123,18 @@ public class BalloonManager : MonoBehaviour
     {
         switch (wallIndex)
         {
-            case 0: // top
+            case 0:
+                // Pick a random x-position along the top edge.
                 return new Vector3(Random.Range(arenaLeft + 1f, arenaRight - 1f), arenaTop - wallOffset, 0f);
-            case 1: // bottom
+            case 1:
+                // Pick a random x-position along the bottom edge.
                 return new Vector3(Random.Range(arenaLeft + 1f, arenaRight - 1f), arenaBottom + wallOffset, 0f);
-            case 2: // left
+            case 2:
+                // Pick a random y-position along the left edge.
                 return new Vector3(arenaLeft + wallOffset, Random.Range(arenaBottom + 1f, arenaTop - 1f), 0f);
-            case 3: // right
+            case 3:
             default:
+                // Pick a random y-position along the right edge.
                 return new Vector3(arenaRight - wallOffset, Random.Range(arenaBottom + 1f, arenaTop - 1f), 0f);
         }
     }

@@ -6,16 +6,25 @@ using UnityEngine;
 /// </summary>
 public class BalloonPop : MonoBehaviour
 {
-    // Wall index (0=top, 1=bottom, 2=left, 3=right) — set by BalloonManager at spawn time
+    // The manager fills this in when the balloon is spawned so the replacement
+    // appears on the same wall after the player pops it.
     [HideInInspector] public int wallIndex = -1;
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        // Only the player should be able to pop balloons.
+        if (!other.CompareTag("Player"))
         {
-            GameManager.Instance?.AddScore(1);
-            BalloonManager.Instance?.ScheduleRespawn(wallIndex);
-            Destroy(gameObject);
+            return;
         }
+
+        // Award one point for the pop.
+        GameManager.Instance?.AddScore(1);
+
+        // Ask the manager to replace this balloon later on the same wall.
+        BalloonManager.Instance?.ScheduleRespawn(wallIndex);
+
+        // Remove the popped balloon from the scene immediately.
+        Destroy(gameObject);
     }
 }

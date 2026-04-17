@@ -1,0 +1,217 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|c:\\users\\benik\\unity\\purlythesnowman\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\balloonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\balloonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\snowball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\snowball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\snowgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\snowgun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\snowgunmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\snowgunmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\highscorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\highscorescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\scoreutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scoreutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\purlydeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\purlydeath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\hudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hudcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\assets\\scripts\\balloonpop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E3E8F5B-2935-F417-3358-B3A5FAD2BE99}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\balloonpop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\SCripts\\PlayerMovement.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:01:40.975Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SnowBall.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\SnowBall.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\SnowBall.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\SnowBall.cs",
+              "RelativeToolTip": "Assets\\SCripts\\SnowBall.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwDMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:02:12.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HUDController.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\HUDController.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\HUDController.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\HUDController.cs",
+              "RelativeToolTip": "Assets\\SCripts\\HUDController.cs",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:01:18.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HighScoresController.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\HighScoresController.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\HighScoresController.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\HighScoresController.cs",
+              "RelativeToolTip": "Assets\\SCripts\\HighScoresController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:01:10.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SnowGun.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\SnowGun.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\SnowGun.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\SnowGun.cs",
+              "RelativeToolTip": "Assets\\SCripts\\SnowGun.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwCoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:02:41.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SnowGunManager.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\SnowGunManager.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\SnowGunManager.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\SnowGunManager.cs",
+              "RelativeToolTip": "Assets\\SCripts\\SnowGunManager.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwDUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:02:47.971Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BalloonManager.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\BalloonManager.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\BalloonManager.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\BalloonManager.cs",
+              "RelativeToolTip": "Assets\\SCripts\\BalloonManager.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAswHEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:00:14.066Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainMenuController.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\MainMenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\MainMenuController.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\MainMenuController.cs",
+              "RelativeToolTip": "Assets\\SCripts\\MainMenuController.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:01:31.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PurlyDeath.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\PurlyDeath.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\PurlyDeath.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\PurlyDeath.cs",
+              "RelativeToolTip": "Assets\\SCripts\\PurlyDeath.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:01:50.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScoreUtility.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\ScoreUtility.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\ScoreUtility.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\ScoreUtility.cs",
+              "RelativeToolTip": "Assets\\SCripts\\ScoreUtility.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:02:05.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\SCripts\\GameManager.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:00:55.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BalloonPop.cs",
+              "DocumentMoniker": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\BalloonPop.cs",
+              "RelativeDocumentMoniker": "Assets\\SCripts\\BalloonPop.cs",
+              "ToolTip": "C:\\Users\\benik\\Unity\\PurlyTheSnowMan\\Assets\\SCripts\\BalloonPop.cs",
+              "RelativeToolTip": "Assets\\SCripts\\BalloonPop.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-17T14:00:48.473Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
